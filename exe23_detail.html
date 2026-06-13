@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>UrbanCart | Product Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail_styles.css">
+</head>
+<body>
+
+    <div class="product-detail">
+        <div class="detail-card">
+            <div class="grid-container">
+                <div class="image-area">
+                    <img class="product-img" id="productImg" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format" alt="Product Image">
+                </div>
+
+                <div class="product-info">
+                    <div class="brand-badge">
+                        <i class="fa-solid fa-certificate"></i> LIMITED EDITION
+                    </div>
+                    <h1 class="product-title" id="productName">Orion X SmartWatch Ultra</h1>
+
+                    <div class="rating-row">
+                        <div class="stars" id="starRating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <span class="review-count" id="reviewCount">4.8 · 2.4k reviews</span>
+                    </div>
+
+                    <div class="price-wrapper">
+                        <span class="current-price" id="productPrice">5999</span>
+                        <span class="old-price" id="oldPrice">₹8999</span>
+                        <span class="discount-badge" id="discountBadge">SAVE 33%</span>
+                    </div>
+
+                    <p class="product-description" id="productDesc">
+                        Advanced 1.78" AMOLED always-on display, heart rate & SpO₂ monitor, 10-day battery life, and built-in GPS. Engineered for performance and style.
+                    </p>
+
+                    <div class="quantity-section">
+                        <span class="qty-label"><i class="fa-regular fa-cube"></i> Quantity</span>
+                        <div class="qty-selector">
+                            <button class="qty-btn" id="decrementBtn" aria-label="Decrease quantity">−</button>
+                            <span class="qty-value" id="qtyValue">1</span>
+                            <button class="qty-btn" id="incrementBtn" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-primary" id="addToCartBtn">
+                            <i class="fa-solid fa-bag-shopping"></i> Add to cart
+                        </button>
+                        <button class="btn-secondary" id="buyNowBtn">
+                            <i class="fa-solid fa-bolt"></i> Buy now
+                        </button>
+                    </div>
+
+                    <div class="delivery-info">
+                        <span><i class="fa-regular fa-clock"></i> Free delivery by Tomorrow</span>
+                        <span><i class="fa-solid fa-rotate-left"></i> 14-day easy returns</span>
+                        <span><i class="fa-regular fa-credit-card"></i> Secure payment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="snackbar">
+        <i class="fa-regular fa-circle-check"></i>
+        <span id="snackbarMsg">Item added to cart</span>
+    </div>
+
+    <script src="detail_script.js"></script>
+</body>
+</html>
